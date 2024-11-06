@@ -12,6 +12,8 @@ RUN apt-get update && \
     apt-get install -y docker-ce-cli && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Install Jq
+RUN apt-get update && apt-get install -y jq
 
 # Download and install kubectl binary directly
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
