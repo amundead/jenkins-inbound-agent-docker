@@ -11,7 +11,7 @@ pipeline {
         IMAGE_NAME_GITHUB = "ghcr.io/${GITHUB_REPOSITORY}"  // Full image name for GitHub Packages
         
         // Common tag
-        TAG = 'v1.02'  // Tag for the Docker image
+        TAG = 'latest'  // Tag for the Docker image
     }
 
     stages {
